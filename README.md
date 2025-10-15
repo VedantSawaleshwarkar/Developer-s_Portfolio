@@ -1,63 +1,88 @@
-# Vedant Sawaleshwarkar — Portfolio
+# Vedant Sawaleshwarkar — AI/Full‑Stack Developer Portfolio
 
-Beautiful, fast, and modern personal portfolio built with React, Tailwind CSS, Vite and shadcn/ui. Clean code, delightful micro-interactions, and easy customization.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A dynamic and responsive personal portfolio built with React, Vite, Tailwind CSS, and shadcn/ui to showcase projects, skills, and my journey in AI‑powered web development.
+
+**➡️ https://vedant-ai.in**
 
 
----
 
-## ✨ Features
+### ✨ Features
 
-- **Blazing fast**: Vite-powered dev/build, optimized assets
-- **Responsive**: Fluid layout across mobile, tablet, and desktop
-- **Accessible**: Keyboard-friendly and semantic components
-- **Themed UI**: Tailwind + shadcn/ui primitives with tasteful animations
+- **Interactive UI**: Smooth animations, hover effects, and micro‑interactions
+- **Fully responsive**: Mobile‑first design that looks great on any device
+- **Polished components**: shadcn/ui primitives with accessible patterns
+- **Fast by default**: Vite dev server and optimized production build
 - **Sectioned content**: Hero, About, Skills, Projects, Experience, Education, Contact
-- **Smooth UX**: Scroll-to-section, animated backgrounds, glassmorphism accents
-- **Easy to extend**: Component-driven structure with clear separation of concerns
+- **Contact CTA**: Smooth scroll to contact section; downloadable resume
 
 ---
 
-## 🚀 Quick Start
+### 💻 Tech Stack
 
-Prerequisites: Node.js 18+ and npm
+- **Frontend**: React, JavaScript, Tailwind CSS, shadcn/ui
+- **Build Tool**: Vite
+- **Deployment**: Any static host (GitHub Pages, Vercel, Netlify, Cloudflare Pages)
 
-```sh
-npm install
-npm run dev
-```
+---
 
-Build and preview production:
+### 🎯 Project Goals
+
+Create a professional, fast, and visually appealing platform to showcase skills and projects.
+
+- **Master modern tooling**: React 18 + Vite + Tailwind CSS
+- **Thoughtful UX**: Clean, intuitive, and fully responsive UI
+- **AI/ML friendly**: Highlight interests and projects in AI/ML alongside full‑stack work
+
+---
+
+### 🛤️ Learning Journey
+
+Key challenges and takeaways while building this portfolio:
+
+- **State & effects in React**: Clean handling of UI state and side‑effects
+- **Component architecture**: Reusable primitives and section‑based composition
+- **Performance**: Asset optimization, motion‑reduced animations, and lazy loading
+
+---
+
+### 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+#### Prerequisites
+
+- Node.js 18+ and npm
+
+#### Installation & Setup
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/vedantsawaleshwarkar/vedant-portfolio.git
+    cd vedant-portfolio
+    ```
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
+3. Start the dev server:
+    ```sh
+    npm run dev
+    ```
+
+Open `http://localhost:5173` (default Vite port) to view it in your browser.
+
+#### Build & Preview
 
 ```sh
 npm run build
 npm run preview
 ```
 
-Common scripts:
-
-```sh
-# Start dev server
-npm run dev
-
-# Lint (if configured in your editor)
-npm run lint
-
-# Type-check (if TypeScript is added later)
-npm run typecheck
-```
-
 ---
 
-## 🧰 Tech Stack
-
-- React 18
-- Vite
-- Tailwind CSS
-- shadcn/ui
-
----
-
-## 📁 Project Structure
+### 🧩 Project Structure
 
 - `src/` — application source
 - `src/components/` — UI and section components
@@ -66,60 +91,36 @@ npm run typecheck
 - `src/lib/` — utilities and helpers
 - `public/` — static assets (images, PDFs, icons)
 
-Key files worth exploring:
+Key files:
 
 - `src/components/Hero.jsx` — headline, action buttons, social links
-- `src/components/Projects.jsx` — project cards and filtering
+- `src/components/Projects.jsx` — project cards
 - `src/pages/Index.jsx` — home page composition
 
 ---
 
-## 🛠️ Customization Guide
+### 🛠️ Customization
 
-- Content: Update components like `src/components/Hero.jsx`, `src/components/Projects.jsx`, `src/components/About.jsx`
-- Theme: Adjust `tailwind.config.js` tokens and CSS variables in `src/index.css`
-- SEO: Edit meta tags and Open Graph data in `index.html`
-- Assets: Replace images in `public/` (e.g., `Pass.jpg`, `favicon.png`, `Vedant_Resume.pdf`)
-
-Tip: Keep image sizes optimized for the web and use modern formats when possible.
+- Content: Update `src/components/Hero.jsx`, `src/components/Projects.jsx`, `src/components/About.jsx`
+- Theme: Adjust tokens in `tailwind.config.js` and styles in `src/index.css`
+- SEO: Edit meta and Open Graph tags in `index.html`
+- Assets: Replace files in `public/` (e.g., `Pass.jpg`, `favicon.png`, `Vedant_Resume.pdf`)
 
 ---
 
-## 🖼️ Screenshots
+### 🌐 Deployment
 
-You can replace the placeholder with real screenshots:
-
-```md
-![Hero](public/placeholder.svg)
-![Projects](public/placeholder.svg)
-```
-
----
-
-## 🌐 Deployment
-
-The site is a static build and can be hosted anywhere:
-
-- GitHub Pages
-- Netlify
-- Vercel
-- Cloudflare Pages
-
-General steps:
+The site builds to static files in `dist/` and can be hosted anywhere.
 
 ```sh
 npm run build
 # Deploy the contents of the dist/ folder to your hosting provider
 ```
 
----
-
-## 🤝 Contributing
-
-Contributions and suggestions are welcome. Please open an issue or PR. See `CONTRIBUTING.md`.
+Popular options: GitHub Pages, Vercel, Netlify, Cloudflare Pages.
 
 ---
 
-## 📄 License
+### 📜 License
 
-MIT License — see `LICENSE` for details.
+This project is distributed under the MIT License. See the `LICENSE` file for more information.
