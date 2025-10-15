@@ -2,7 +2,6 @@
 
 Beautiful, fast, and modern personal portfolio built with React, Tailwind CSS, Vite and shadcn/ui. Clean code, delightful micro-interactions, and easy customization.
 
-![Hero Screenshot](public/placeholder.svg)
 
 ---
 
