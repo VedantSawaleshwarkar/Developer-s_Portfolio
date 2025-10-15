@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Github, Linkedin, Mail, Phone, FileDown } from "lucide-react";
 
 const Hero = () => {
@@ -12,10 +13,21 @@ const Hero = () => {
 
       <div className="max-w-6xl mx-auto text-center relative z-10 animate-fade-in">
         {/* Avatar */}
-        <div className="flex justify-center mb-6">
-          <div className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 rounded-full overflow-hidden ring-2 ring-primary/30 glass-card glow-cyan">
-            <img src="/Pass.jpg" alt="Vedant profile" className="h-full w-full object-cover" loading="eager" />
-          </div>
+        <div className="flex flex-col items-center justify-center mb-6 gap-3">
+          <Dialog>
+            <DialogTrigger asChild>
+              <div className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 rounded-full overflow-hidden ring-2 ring-primary/30 glass-card glow-cyan cursor-pointer">
+                <img src="/Pass.jpg" alt="Vedant profile" className="h-full w-full object-cover" loading="eager" />
+              </div>
+            </DialogTrigger>
+            <DialogContent className="max-w-[95vw] sm:max-w-[90vw]">
+              <img
+                src="../public/Pass.jpg"
+                alt="Vedant profile large"
+                className="max-w-[90vw] max-h-[90vh] object-contain mx-auto"
+              />
+            </DialogContent>
+          </Dialog>
         </div>
         <div className="mb-6">
           <h2 className="text-primary text-lg md:text-xl font-semibold mb-2 animate-slide-in-left">
@@ -51,23 +63,24 @@ const Hero = () => {
             <Mail className="mr-2 h-4 w-4" />
             Get In Touch
           </Button>
-          <a href="#projects">
-            <Button variant="outline" className="hover:glow-purple transition-all duration-300 hover:scale-105">
-              View Projects
-            </Button>
-          </a>
-          <a href={`${import.meta.env.BASE_URL}Vedant_Resume.pdf`} download="Vedant_Resume.pdf">
+          <a href="/Vedant_Resume.pdf" download>
             <Button variant="outline" className="hover:glow-pink transition-all duration-300 hover:scale-105">
               <FileDown className="mr-2 h-4 w-4" />
               Download Resume
             </Button>
           </a>
+          <a href="#projects">
+            <Button variant="outline" className="hover:glow-purple transition-all duration-300 hover:scale-105">
+              View Projects
+            </Button>
+          </a>
+          
         </div>
 
         {/* Stat chips */}
         <div className="flex flex-wrap gap-3 justify-center mb-6">
           <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm border border-primary/20">Full Stack</span>
-          <span className="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-sm border border-secondary/20">ML/AI</span>
+          <span className="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-sm border border-secondary/20">AI/ML</span>
           <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm border border-accent/20">2+ Projects</span>
         </div>
 

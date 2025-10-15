@@ -31,7 +31,7 @@ const projects = [
   {
     title: "IPL Data Analysis (Power BI)",
     period: "2025",
-    link: "#",
+    link: "",
     description:
       "Interactive Power BI dashboard analyzing IPL seasons with insights on team performance, player stats, and venue impact.",
     highlights: [
